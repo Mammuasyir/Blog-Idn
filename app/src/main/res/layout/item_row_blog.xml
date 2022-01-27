@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_launcher_background"
+            android:id="@+id/item_image_blog"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_tv_judul"
+            android:layout_below="@+id/item_image_blog"
+            android:text="Judul Blog"
+            android:textSize="22sp"
+            android:layout_margin="6dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_tv_judul"
+            android:text="Penulis"
+            android:id="@+id/item_tv_author"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_tv_judul"
+            android:layout_alignParentEnd="true"
+            android:text="Tanggal Posting"
+            android:id="@+id/item_tv_tanggal"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
